@@ -1,0 +1,19 @@
+{
+  "name": "jsqrcode",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jveljan/jsqrcode",
+  "authors": [
+    "Jovica Veljanovski <j.veljanovski@kezzler.com>"
+  ],
+  "description": "",
+  "main": "build/js/all.min.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
