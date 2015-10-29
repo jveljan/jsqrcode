@@ -6,7 +6,7 @@
     "Jovica Veljanovski <j.veljanovski@kezzler.com>"
   ],
   "description": "",
-  "main": "build/js/all.min.js",
+  "main": "build/js/all.js",
   "moduleType": "globals",
   "license": "MIT",
   "ignore": [

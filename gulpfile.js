@@ -5,7 +5,25 @@ var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
 
 var paths = {
-  scripts: ['src/**/*.js']
+  scripts: [
+	'src/grid.js',
+	'src/version.js',
+	'src/detector.js',
+	'src/formatinf.js',
+	'src/errorlevel.js',
+	'src/bitmat.js',
+	'src/datablock.js',
+	'src/bmparser.js',
+	'src/datamask.js',
+	'src/rsdecoder.js',
+	'src/gf256poly.js',
+	'src/gf256.js',
+	'src/decoder.js',
+	'src/qrcode.js',
+	'src/findpat.js',
+	'src/alignpat.js',
+	'src/databr.js'
+  ]
 };
 
 // Not all tasks need to use streams
@@ -20,9 +38,9 @@ gulp.task('scripts', ['clean'], function() {
   // with sourcemaps all the way down
   return gulp.src(paths.scripts)
     .pipe(sourcemaps.init())
-      .pipe(uglify())
-      .pipe(concat('all.min.js'))
-    .pipe(sourcemaps.write())
+      //.pipe(uglify())
+      .pipe(concat('all.js'))
+    //.pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
 });
 
