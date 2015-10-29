@@ -7,10 +7,10 @@
   ],
   "description": "",
   "main": "build/js/all.min.js",
-  "moduleType": [],
+  "moduleType": "globals",
   "license": "MIT",
   "ignore": [
-    "**/.*",
+    "/.*",
     "node_modules",
     "bower_components",
     "test",
